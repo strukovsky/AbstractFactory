@@ -2,7 +2,7 @@ namespace Lab1.Drivers;
 
 public class TaxiDriver : Driver
 {
-    protected TaxiDriver()
+    private TaxiDriver()
     {
         
     }
