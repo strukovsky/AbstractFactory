@@ -15,7 +15,7 @@ public class BusVoyage
         var second = new Passenger("Yaroslav");
 
         var boarding = new BoardBus();
-        boarding.BoardDriver(driver);
+        boarding.BoardBusDriver(driver);
         try
         {
             boarding.BoardPassenger(first);

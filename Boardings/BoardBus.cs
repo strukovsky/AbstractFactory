@@ -1,3 +1,5 @@
+using Lab1.Drivers;
+
 namespace Lab1.Boardings;
 
 public class BoardBus : BoardAnyCar
@@ -8,6 +10,18 @@ public class BoardBus : BoardAnyCar
 
 
     public override string ToString() => $"Bus: {base.ToString()}";
+
+    public override void BoardPassenger(Passenger passenger)
+    {
+        base.BoardPassenger(passenger);
+        Console.WriteLine($"Bus: boarded {passenger}");
+    }
+
+    public void BoardBusDriver(BusDriver driver)
+    {
+        base.BoardDriver(driver);
+        Console.WriteLine($"Bus: boarded driver {driver}");
+    }
 
     public override void StartVoyage()
     {

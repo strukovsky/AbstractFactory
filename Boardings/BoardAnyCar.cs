@@ -9,7 +9,7 @@ public abstract class BoardAnyCar
     private readonly List<Passenger> _passengers;
     private int _passengersLimit;
 
-    public void BoardPassenger(Passenger passenger)
+    public virtual void BoardPassenger(Passenger passenger)
     {
         if (_passengers.Count <= _passengersLimit)
         {
@@ -19,7 +19,7 @@ public abstract class BoardAnyCar
         else throw new CarIsFullException();
     }
 
-    public void BoardDriver(Driver driver) => _driver = driver;
+    protected void BoardDriver(Driver driver) => _driver = driver;
 
     protected BoardAnyCar(int passengersLimit)
     {
