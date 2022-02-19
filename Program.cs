@@ -1,7 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using Lab1;
+using Lab1.Boardings;
+using Lab1.Drivers;
+using Lab1.Example;
 
-using Lab1;
-
-var driver = Driver.GetInstance();
-driver.Name = "Vladimir";
-Console.WriteLine(driver);
+BusVoyage.Perform();
