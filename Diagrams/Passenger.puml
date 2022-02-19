@@ -1,0 +1,17 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+
+class Passenger 
+{
+ +Name
+ +Passenger(name)
+}
+
+
+
+
+
+
+
+@enduml

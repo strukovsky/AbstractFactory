@@ -1,0 +1,26 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+
+class BoardAnyCar 
+{
+ -_driver
+ -_passengers
+ -_passengersLimit
+
+ +BoardPassenger(Passenger)
+ +BoardDriver(Driver)
+ +StartVoyage()
+ +ToString()
+ -IsDriverInCab()
+ +GetCurrentPassengersCount()
+ +ToString()
+}
+
+
+
+
+
+
+
+@enduml

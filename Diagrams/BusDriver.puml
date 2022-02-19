@@ -1,0 +1,19 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+
+class BusDriver 
+{
+ +Id
+ +ToString()
+ +{Static} GetInstance()
+ -BusDriver()
+}
+
+
+
+
+
+
+
+@enduml
