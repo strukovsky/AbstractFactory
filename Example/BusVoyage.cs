@@ -1,5 +1,6 @@
 using Lab1.Boardings;
 using Lab1.Drivers;
+using Lab1.Passengers;
 
 namespace Lab1.Example;
 
@@ -7,12 +8,9 @@ public class BusVoyage
 {
     public static void Perform()
     {
-        var driver = BusDriver.GetInstance();
-        driver.Id = 1;
-        driver.Name = "Victor";
-
-        var first = new Passenger("Dmitry");
-        var second = new Passenger("Yaroslav");
+        var driver = new BusDriver("Petya", 10001);
+        var first = new PersonPassenger("Dima");
+        var second = new CargoPassenger(10,10,10);
 
         var boarding = new BoardBus();
         boarding.BoardBusDriver(driver);

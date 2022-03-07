@@ -1,4 +1,5 @@
 using Lab1.Drivers;
+using Lab1.Passengers;
 
 namespace Lab1.Boardings;
 

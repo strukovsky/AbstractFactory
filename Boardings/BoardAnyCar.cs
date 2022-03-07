@@ -1,5 +1,6 @@
 using System.Text;
 using Lab1.Drivers;
+using Lab1.Passengers;
 
 namespace Lab1.Boardings;
 
@@ -34,7 +35,7 @@ public abstract class BoardAnyCar
         result.Append($"{driverString}. Passengers are:\n");
         foreach (var passenger in _passengers)
         {
-            result.Append(passenger.Name);
+            result.Append(passenger);
             result.Append('\n');
         }
 

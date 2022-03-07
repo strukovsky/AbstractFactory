@@ -1,4 +1,5 @@
 using Lab1.Drivers;
+using Lab1.Passengers;
 
 namespace Lab1.Boardings;
 
@@ -17,7 +18,7 @@ public class BoardTaxi : BoardAnyCar
 
     public void BoardTaxiDriver(TaxiDriver driver)
     {
-        base.BoardDriver(driver);
+        BoardDriver(driver);
         Console.WriteLine($"Taxi: boarded driver {driver}");
     }
 

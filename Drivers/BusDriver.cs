@@ -4,13 +4,10 @@ public class BusDriver : Driver
 {
     public int Id;
 
-    public static BusDriver GetInstance()
+    public BusDriver(string name, int id)
     {
-        return (BusDriver) (Instance ??= new BusDriver());
-    }
-
-    private BusDriver()
-    {
+        Name = name;
+        Id = id;
     }
 
     public override string ToString() => $"Bus driver {Name} with identifier {Id}";

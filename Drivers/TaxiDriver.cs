@@ -2,14 +2,9 @@ namespace Lab1.Drivers;
 
 public class TaxiDriver : Driver
 {
-    private TaxiDriver()
+    public TaxiDriver(string name)
     {
-        
-    }
-    
-    public static TaxiDriver GetInstance()
-    {
-        return (TaxiDriver) (Instance ??= new TaxiDriver());
+        Name = name;
     }
 
     public override string ToString() => $"Taxi driver {Name}";

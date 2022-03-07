@@ -1,5 +1,6 @@
 using Lab1.Boardings;
 using Lab1.Drivers;
+using Lab1.Passengers;
 
 namespace Lab1.Example;
 
@@ -7,11 +8,9 @@ public class TaxiVoyage
 {
     public static void Perform()
     {
-        var driver = TaxiDriver.GetInstance();
-        driver.Name = "Nikolay";
-
-        var first = new Passenger("Dmitry");
-        var second = new Passenger("Yaroslav");
+        var driver = new TaxiDriver("Nikolay");
+        var first = new PersonPassenger("Vova");
+        var second = new CargoPassenger(100,10,10);
 
         var boarding = new BoardTaxi();
         boarding.BoardTaxiDriver(driver);
